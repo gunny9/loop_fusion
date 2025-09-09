@@ -108,30 +108,6 @@ void new_sequence()
 }
 
 
-// void new_sequence_c()
-// {
-//     printf("new sequence\n");
-//     sequence++;
-//     printf("sequence cnt %d \n", sequence);
-//     if (sequence > 5)
-//     {
-//         ROS_WARN("only support 5 sequences since it's boring to copy code for more sequences.");
-//         // ROS_BREAK();
-//     }
-//     posegraph.posegraph_visualization->reset();
-//     posegraph.publish();
-//     m_buf.lock();
-//     while(!image_buf_c.empty())
-//         image_buf_c.pop();
-//     while(!point_buf.empty())
-//         point_buf.pop();
-//     while(!pose_buf.empty())
-//         pose_buf.pop();
-//     while(!odometry_buf.empty())
-//         odometry_buf.pop();
-//     m_buf.unlock();
-// }
-
 
 void image_callback(const sensor_msgs::msg::Image::SharedPtr image_msg)
 {
